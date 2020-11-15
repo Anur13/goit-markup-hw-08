@@ -12,36 +12,37 @@
   <body>
     <header class="portfolio-header header">
       <div class="container container-nav">
-        <nav class="nav">
-          <a class="logo header-logo" href="/"><span>Web</span>Studio</a>
+        <a class="logo header-logo" href="/"><span>Web</span>Studio</a>
 
-          <ul class="nav-links">
-            <li class="nav-link"><a href="./index.html">Студия</a></li>
-            <li class="nav-link nav-current"><a class="nav-current-link" href="./portfolio.html">Портфолио</a></li>
-            <li class="nav-link"><a href="">Контакты</a></li>
+        <div data-menu class="nav_contacts is-open">
+          <nav class="nav">
+            <ul class="nav-links">
+              <li class="nav-current nav-link"><a href="./index.html">Студия</a></li>
+              <li class="nav-link"><a class="nav-current-link" href="./portfolio.html">Портфолио</a></li>
+              <li class="nav-link"><a href="">Контакты</a></li>
+            </ul>
+          </nav>
+          <ul class="header-contacts__list">
+            <li class="header-contact__item">
+              <a class="header-contacts header-item" href="info@devstudio.com">
+                <svg class="header__icon" width="16px" height="12px">
+                  <use href="./images/icons-homework4/symbol-defs.svg#envelope"></use>
+                </svg>
+                info@.devstuido.com</a
+              >
+            </li>
+            <li class="header-contact__item">
+              <a class="header-contacts" href="tel:+380991111111">
+                <svg class="header__icon" width="10px" height="16px">
+                  <use href="./images/icons-homework4/symbol-defs.svg#smartphone"></use>
+                </svg>
+                +38 096 111 11 11</a
+              >
+            </li>
           </ul>
-        </nav>
-
-        <ul class="header-contacts__list">
-          <li class="header-contact__item">
-            <a class="header-contacts header-item" href="info@devstudio.com">
-              <svg class="header__icon" width="16px" height="12px">
-                <use href="./images/icons-homework4/symbol-defs.svg#envelope"></use>
-              </svg>
-              info@.devstuido.com</a
-            >
-          </li>
-          <li class="header-contact__item">
-            <a class="header-contacts" href="tel:+380991111111">
-              <svg class="header__icon" width="10px" height="16px">
-                <use href="./images/icons-homework4/symbol-defs.svg#smartphone"></use>
-              </svg>
-              +38 096 111 11 11</a
-            >
-          </li>
-        </ul>
+        </div>
       </div>
-      <button class="mob_menu-button" type="button is-open">
+      <button class="mob_menu-button is-open" type="button" data-menu-button>
         <svg class="mob_icons" width="40" height="40">
           <use class="mob_icon-menu" href="./images/icons-homework4/symbol-defs.svg#menu-icon"></use>
           <use class="mob_icon-cross" href="./images/icons-homework4/symbol-defs.svg#close-black"></use>
