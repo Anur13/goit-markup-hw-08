@@ -1,0 +1,42 @@
+.nav {
+  display: flex;
+  align-items: center;
+
+  &-link {
+    flex-basis: calc(100% - 100px / 3);
+    margin-right: 50px;
+  }
+  &-links {
+    display: flex;
+  }
+  .nav-current-link::after {
+    position: absolute;
+    display: block;
+    width: 100%;
+    background: #2196f3;
+    border-radius: 2px;
+    height: 4px;
+    content: "";
+    bottom: 0;
+  }
+
+  .nav-current-link {
+    position: relative;
+    padding-bottom: 39px;
+  }
+
+  & ul {
+    color: $secondary-text-colour;
+  }
+  &-current {
+    color: $buttons-links-colour;
+  }
+  @include for-size(tablet-to-desktop) {
+    .nav-current-link {
+      padding-bottom: 49px;
+    }
+  }
+}
+.logo span {
+  color: $buttons-links-colour;
+}

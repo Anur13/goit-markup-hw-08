@@ -1,0 +1,65 @@
+.qualities {
+  padding-top: 94px;
+
+  &-header {
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 1.14;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+  }
+  &-paragraph {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    color: $primary-text-colour;
+  }
+
+  @include for-size(tablet) {
+    &-list {
+      display: flex;
+      flex-wrap: wrap;
+      margin-left: -30px;
+      margin-top: -30px;
+    }
+    &-item {
+      flex-basis: calc((100% / 2) - 30px);
+
+      margin-left: 30px;
+      margin-top: 30px;
+    }
+  }
+
+  @include for-size(desktop) {
+    &-list {
+      display: flex;
+    }
+    &-item {
+      flex-basis: calc((100% / 4) - 30px);
+    }
+  }
+
+  &-item::before {
+    content: "";
+    display: block;
+    max-width: 100%;
+    height: 120px;
+    margin-bottom: 30px;
+    background-color: #f5f4fa;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+}
+
+.logo-antenna::before {
+  background-image: url(../images/icons-homework4/antenna.svg);
+}
+.logo-clock::before {
+  background-image: url(../images/icons-homework4/clock.svg);
+}
+.logo-diagram::before {
+  background-image: url(../images/icons-homework4/diagram.svg);
+}
+.logo-astronaut::before {
+  background-image: url(../images/icons-homework4/astronaut.svg);
+}

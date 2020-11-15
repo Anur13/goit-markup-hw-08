@@ -1,0 +1,74 @@
+.team {
+  background-color: #f5f4fa;
+  padding-top: 94px;
+
+  &-card {
+    background-color: #ffffff;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+    text-align: center;
+  }
+  &.container {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+
+  @include for-size(mobile-only) {
+    .team-card:not(:first-child) {
+      margin-top: 20px;
+    }
+    .icon-list {
+      padding-bottom: 24px;
+    }
+    img {
+      width: 100%;
+    }
+  }
+  @include for-size(tablet-to-desktop) {
+    img {
+      width: 100%;
+    }
+    &-cards {
+      display: flex;
+      flex-wrap: wrap;
+      margin-top: -30px;
+      margin-bottom: -30px;
+    }
+    &-card {
+      margin: 15px;
+      flex-basis: calc((100% / 2) - 30px);
+    }
+  }
+
+  @include for-size(desktop) {
+    &-cards {
+      display: flex;
+      flex-wrap: wrap;
+      flex-basis: calc(100% / 4 - 90px);
+    }
+    &-card {
+      padding-bottom: 30px;
+    }
+    &-card:not(:first-child) {
+      margin-left: 30px;
+    }
+  }
+
+  &-card p {
+    margin-top: 10px;
+    margin-bottom: 16px;
+  }
+}
+.names-header {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.17;
+  color: $secondary-text-colour;
+  margin-top: 30px;
+}
+
+.names-paragraph {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.17;
+}

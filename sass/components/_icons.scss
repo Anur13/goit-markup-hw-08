@@ -1,0 +1,26 @@
+.social-network__icon-link {
+  height: 44px;
+  width: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  @include transition(background-color);
+  fill: #afb1b8;
+}
+.icon-item:not(:first-child) {
+  margin-left: 10px;
+}
+.icon-list {
+  margin: 0;
+  display: inline-flex;
+  padding: 0;
+}
+.social-network__icon-link:hover .social-network__icon-svg,
+.social-network__icon-link:focus .social-network__icon-svg {
+  fill: #ffffff;
+}
+.social-network__icon-link:hover,
+.social-network__icon-link:focus {
+  background-color: $buttons-links-colour;
+}

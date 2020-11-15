@@ -1,0 +1,121 @@
+.modal-header {
+  font-family: "Roboto", sans-serif;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 1.15;
+  letter-spacing: 0.03em;
+  text-align: center;
+  margin-bottom: 12px;
+}
+
+.modal__contract-checkbox {
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+}
+.modal__contract-checkbox-link {
+  text-decoration: underline;
+  color: #188ce8;
+}
+
+.modal-textarea::placeholder {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.01em;
+}
+
+.modal-textarea {
+  height: 120px;
+  width: 100%;
+  resize: none;
+  padding: 12px 16px;
+  margin-bottom: 25px;
+  @include border(rgba(33, 33, 33, 0.2));
+
+  border-radius: 4px;
+  @include transition(border-color);
+}
+.modal-input__container {
+  position: relative;
+
+  display: flex;
+  flex-direction: column;
+}
+.modal-label {
+  margin-bottom: 4px;
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.14;
+
+  letter-spacing: 0.01em;
+  display: flex;
+  flex-direction: column;
+}
+
+.modal-icon {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 13px;
+  width: 18px;
+  height: 18px;
+  @include transition(fill);
+}
+
+.modal-submit__button {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.modal-input__container:focus svg,
+.modal-input__container:hover svg,
+.modal-input__container:hover .modal-input,
+.modal-input__container:focus .modal-input,
+.modal-input__container:hover .modal-textarea,
+.modal-input__container:focus .modal-textarea {
+  fill: $buttons-links-colour;
+  border-color: $buttons-links-colour;
+}
+.modal-checkbox__input:checked + .custom-checkbox {
+  border-color: $buttons-links-colour;
+  background-image: url(../images/images-homework-6/vector.svg);
+  background-color: $buttons-links-colour;
+  background-size: auto;
+  background-repeat: no-repeat;
+}
+
+.modal-checkbox__submit {
+  position: relative;
+
+  padding-left: 30px;
+  margin-bottom: 30px;
+}
+.custom-checkbox {
+  position: absolute;
+  display: block;
+  left: 0;
+  bottom: 50%;
+  transform: translateY(50%);
+  width: 16px;
+  height: 15px;
+  border: 2px solid #212121;
+  border-radius: 3px;
+}
+.modal-input {
+  @include border(rgba(33, 33, 33, 0.2));
+
+  border-radius: 4px;
+  padding-left: 40px;
+  height: 40px;
+  margin-bottom: 10px;
+  @include transition(border-color);
+}

@@ -1,0 +1,30 @@
+.hero {
+  &-header {
+    font-size: 44px;
+    line-height: 1.4;
+    font-weight: 900;
+    text-align: center;
+    color: $background-colour;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+  }
+
+  &-section {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1600px;
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/images_homework4/Img.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: #2f303a;
+    text-align: center;
+  }
+}
+.container-hero {
+  margin-bottom: 0;
+  max-width: 680px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 200px;
+  padding-bottom: 200px;
+}
