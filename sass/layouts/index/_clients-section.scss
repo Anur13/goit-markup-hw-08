@@ -7,26 +7,23 @@
     display: flex;
   }
 
-  @include for-size(mobile-only) {
-    &-section {
-      padding-top: 60px;
-      padding-bottom: 60px;
-    }
-    &-icon__list {
-      flex-wrap: wrap;
-    }
-    &-item {
-      flex-basis: calc((100% - 30px) / 2);
-    }
-    &-item:nth-child(even) {
-      margin-left: 30px;
-    }
-    &-item:nth-child(n + 3) {
-      margin-top: 30px;
-    }
+  &-section {
+    padding-top: 60px;
+    padding-bottom: 60px;
   }
-
-  @include for-size(tablet-to-desktop) {
+  &-icon__list {
+    flex-wrap: wrap;
+  }
+  &-item {
+    flex-basis: calc((100% - 30px) / 2);
+  }
+  &-item:nth-child(even) {
+    margin-left: 30px;
+  }
+  &-item:nth-child(n + 3) {
+    margin-top: 30px;
+  }
+  @include for-size(tablet) {
     &-section {
       padding-top: 30px;
       padding-bottom: 30px;

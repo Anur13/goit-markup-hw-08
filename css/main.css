@@ -1,5 +1,6 @@
 html {
   box-sizing: border-box;
+  width: 100%;
 }
 
 *,
@@ -89,14 +90,20 @@ a {
 }
 
 .container {
-  width: 100%px;
+  width: 100%;
   padding-left: 15px;
   padding-right: 15px;
   margin-left: auto;
   margin-right: auto;
 }
 
-@media (min-width: 480px) and (max-width: 1199px) {
+@media (min-width: 768px) {
+  .container {
+    width: 768px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 767px) {
   .container {
     width: 768px;
   }
@@ -105,6 +112,14 @@ a {
 @media (min-width: 1200px) {
   .container {
     width: 1200px;
+  }
+}
+
+@media (max-width: 767px) {
+  .container {
+    width: 480px;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 
@@ -192,7 +207,7 @@ a {
   color: #2196f3;
 }
 
-@media (min-width: 480px) and (max-width: 1199px) {
+@media (min-width: 768px) {
   .nav .nav-current-link {
     padding-bottom: 49px;
   }
@@ -310,7 +325,7 @@ a {
   color: #ffffff;
 }
 
-@media (max-width: 479px) {
+@media (min-width: 480px) {
   .footer .footer-section__whole,
   .footer .section__social-network {
     align-items: baseline;
@@ -341,7 +356,7 @@ a {
   }
 }
 
-@media (min-width: 480px) and (max-width: 1199px) {
+@media (min-width: 768px) and (max-width: 767px) {
   .footer .footer_logo_and_social {
     display: flex;
     align-items: baseline;
@@ -466,11 +481,7 @@ header a:focus {
   font-weight: 500;
 }
 
-@media (max-width: 479px) {
-  .container-nav,
-  .nav_contacts {
-    padding-top: 0px;
-  }
+@media (min-width: 480px) {
   .container-nav {
     padding-bottom: 16px;
     border-bottom: 1px solid #ececec;
@@ -501,12 +512,12 @@ header a:focus {
     width: 100%;
     left: 55%;
     transform: translatex(-55%);
-    top: 12%;
+    top: 11%;
     background-color: white;
   }
 }
 
-@media (min-width: 480px) and (max-width: 1199px) {
+@media (min-width: 768px) and (max-width: 767px) {
   .portfolio-header {
     margin-bottom: 30px;
   }
@@ -559,22 +570,6 @@ header a:focus {
   cursor: pointer;
 }
 
-@media (max-width: 1199px) {
-  .modal {
-    max-width: 450px;
-    max-height: 609px;
-    width: 100%;
-    height: 100%;
-  }
-}
-
-@media (max-width: 1199px) and (min-width: 1200px) {
-  .modal {
-    min-width: 528px;
-    min-height: 581px;
-  }
-}
-
 .clients-section {
   padding-top: 94px;
 }
@@ -583,26 +578,28 @@ header a:focus {
   display: flex;
 }
 
-@media (max-width: 479px) {
-  .clients-section {
-    padding-top: 60px;
-    padding-bottom: 60px;
-  }
-  .clients-icon__list {
-    flex-wrap: wrap;
-  }
-  .clients-item {
-    flex-basis: calc((100% - 30px) / 2);
-  }
-  .clients-item:nth-child(even) {
-    margin-left: 30px;
-  }
-  .clients-item:nth-child(n + 3) {
-    margin-top: 30px;
-  }
+.clients-section {
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
-@media (min-width: 480px) and (max-width: 1199px) {
+.clients-icon__list {
+  flex-wrap: wrap;
+}
+
+.clients-item {
+  flex-basis: calc((100% - 30px) / 2);
+}
+
+.clients-item:nth-child(even) {
+  margin-left: 30px;
+}
+
+.clients-item:nth-child(n + 3) {
+  margin-top: 30px;
+}
+
+@media (min-width: 768px) {
   .clients-section {
     padding-top: 30px;
     padding-bottom: 30px;
@@ -664,18 +661,44 @@ header a:focus {
   height: 100%;
   margin-left: auto;
   margin-right: auto;
-  max-width: 480px;
-  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/images_homework4/Img.jpg);
+  max-width: 1600px;
   background-position: center;
   background-repeat: no-repeat;
   background-color: #2f303a;
   text-align: center;
 }
 
+@media screen and (min-width: 480px) and (min-device-pixel-ratio: 2), screen and (min-width: 480px) and (min-resolution: 192dpi), screen and (min-width: 480px) and (min-resolution: 2dppx) {
+  .hero-section-section {
+    background-image: url("../images/images_homework4/mobile/Img-2x.jpg");
+  }
+}
+
 @media (min-width: 1200px) {
   .hero-section {
     max-width: 1600px;
     background-size: 1600px;
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/images_homework4/desktop/Img.jpg);
+  }
+}
+
+@media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
+  .hero-section-section {
+    background-image: url("../images/images_homework4/desktop/Img-2x.jpg");
+  }
+}
+
+@media (min-width: 768px) {
+  .hero-section {
+    max-width: 768px;
+    background-size: 768px;
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/images_homework4/tablet/Img-1.jpg);
+  }
+}
+
+@media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
+  .hero-section-section {
+    background-image: url("../images/images_homework4/tablet/Img-2x.jpg");
   }
 }
 
@@ -812,7 +835,7 @@ header a:focus {
   padding-right: 0px;
 }
 
-@media (max-width: 479px) {
+@media (max-width: 767px) {
   .team .team-card:not(:first-child) {
     margin-top: 20px;
   }
@@ -824,7 +847,7 @@ header a:focus {
   }
 }
 
-@media (min-width: 480px) and (max-width: 1199px) {
+@media (min-width: 768px) and (max-width: 767px) {
   .team img {
     width: 100%;
   }
@@ -905,7 +928,7 @@ header a:focus {
   margin-bottom: 56px;
 }
 
-@media (max-width: 479px) {
+@media (max-width: 767px) {
   .buttons-list {
     display: flex;
     flex-wrap: wrap;
@@ -958,7 +981,7 @@ header a:focus {
   margin-left: -30px;
 }
 
-@media (min-width: 480px) and (max-width: 1199px) {
+@media (min-width: 768px) {
   .card-set {
     display: flex;
     flex-wrap: wrap;
@@ -968,6 +991,16 @@ header a:focus {
     margin: 0;
     margin-top: 30px;
     margin-left: 10px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .card-set {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .product-card {
+    flex-basis: calc(100% / 3 - 60px);
   }
 }
 
@@ -1164,8 +1197,6 @@ header a:focus {
   position: absolute;
   right: 0;
   top: 0;
-  margin-top: 10px;
-  margin-right: 15px;
 }
 
 @media screen and (max-width: 479px) {

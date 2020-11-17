@@ -65,11 +65,7 @@ header a:focus {
   font-weight: 500;
 }
 
-@include for-size(mobile-only) {
-  .container-nav,
-  .nav_contacts {
-    padding-top: 0px;
-  }
+@include for-size(mobile) {
   .container-nav {
     padding-bottom: 16px;
     border-bottom: 1px solid #ececec;
@@ -101,11 +97,12 @@ header a:focus {
     width: 100%;
     left: 55%;
     transform: translatex(-55%);
-    top: 12%;
+    top: 11%;
     background-color: white;
   }
 }
-@include for-size(tablet-to-desktop) {
+
+@include for-size(tablet-only) {
   .portfolio-header {
     margin-bottom: 30px;
   }

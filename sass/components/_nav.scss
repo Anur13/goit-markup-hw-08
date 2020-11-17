@@ -31,7 +31,7 @@
   &-current {
     color: $buttons-links-colour;
   }
-  @include for-size(tablet-to-desktop) {
+  @include for-size(tablet) {
     .nav-current-link {
       padding-bottom: 49px;
     }

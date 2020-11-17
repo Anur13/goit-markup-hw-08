@@ -95,7 +95,7 @@
     color: #ffffff;
   }
   // mobile
-  @include for-size(mobile-only) {
+  @include for-size(mobile) {
     .footer-section__whole,
     .section__social-network {
       align-items: baseline;
@@ -127,7 +127,7 @@
     }
   }
   // tablet
-  @include for-size(tablet-to-desktop) {
+  @include for-size(tablet-only) {
     .footer_logo_and_social {
       display: flex;
       align-items: baseline;

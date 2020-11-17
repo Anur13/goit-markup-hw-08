@@ -12,7 +12,7 @@
   $desktop: 1200px;
 
   @if $range == tablet-only {
-    @media (min-width:480px) and (max-width: #{$tablet - 1}  ) {
+    @media (min-width:768px) and (max-width: #{$tablet - 1}  ) {
       @content;
     }
   } @else if $range == mobile {
@@ -30,19 +30,7 @@
   }
 
   @if $range == mobile-only {
-    @media (max-width: #{$mobile - 1}  ) {
-      @content;
-    }
-  }
-
-  @if $range == tablet-to-desktop {
-    @media (min-width:480px) and (max-width: #{$desktop - 1}  ) {
-      @content;
-    }
-  }
-
-  @if $range == mobile-tablet {
-    @media (max-width: #{$desktop - 1}  ) {
+    @media (max-width: #{$tablet - 1}  ) {
       @content;
     }
   }

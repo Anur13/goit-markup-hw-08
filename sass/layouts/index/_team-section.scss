@@ -24,7 +24,7 @@
       width: 100%;
     }
   }
-  @include for-size(tablet-to-desktop) {
+  @include for-size(tablet-only) {
     img {
       width: 100%;
     }
