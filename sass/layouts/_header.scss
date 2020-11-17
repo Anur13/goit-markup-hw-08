@@ -49,6 +49,9 @@ header a:focus {
         line-height: 1.14;
         font-weight: 500;
     }
+    .index.header {
+        display: flex;
+    }
 }
 
 @include for-size(mobile-only) {

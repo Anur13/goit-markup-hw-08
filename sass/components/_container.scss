@@ -10,6 +10,12 @@
         margin-left: auto;
         margin-right: auto;
     }
+    @include for-size(mobile-only) {
+        margin-top: 20px;
+        width: 480px;
+        margin-left: auto;
+        margin-right: auto;
+    }
     @include for-size(tablet) {
         width: 768px;
     }
