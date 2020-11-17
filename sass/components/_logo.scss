@@ -10,3 +10,6 @@
 .div-logo {
   margin-bottom: 20px;
 }
+@include for-size(mobile-only) {
+  margin-top: 16px;
+}

@@ -1,43 +1,63 @@
 .hero {
   &-header {
-    font-size: 44px;
-    line-height: 1.4;
     font-weight: 900;
     text-align: center;
     color: $background-colour;
     text-transform: uppercase;
     margin-bottom: 30px;
+    font-size: 26px;
+    line-height: 1.61;
+    letter-spacing: 0.06em;
   }
 
   &-section {
-    height: 100%;
     margin-left: auto;
     margin-right: auto;
-    max-width: 480px;
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/images_homework4/Img.jpg);
+    max-width: 1600px;
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../../images/img/hero-bg-480@1x.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-color: #2f303a;
     text-align: center;
-  }
-  @include for-size(desktop) {
-    &-section {
-      max-width: 1600px;
-      background-size: 1600px;
+    @media screen and (min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx) {
+      background-image: url(../../../images/img/hero-bg-480@2x.jpg);
     }
-  }
-  @include for-size(tablet-to-dektop) {
-    &-section {
-      max-width: 768px;
-      background-size: 768px;
+    @include for-size(tablet) {
+      background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../../images/img/hero-bg-768@1x.jpg);
+
+      @media screen and (min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx) {
+        background-image: url(../../../images/img/hero-bg-768@2x.jpg);
+      }
+    }
+    @include for-size(desktop) {
+      background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../../images/img/hero-bg-1600@1x.jpg);
+
+      @media screen and (min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx) {
+        background-image: url(../../../images/img/hero-bg-1600@2x.jpg);
+      }
     }
   }
 }
+
 .container-hero {
   margin-bottom: 0;
-  max-width: 680px;
   margin-left: auto;
   margin-right: auto;
-  padding-top: 200px;
-  padding-bottom: 200px;
+  padding-top: 118px;
+  padding-bottom: 118px;
+}
+
+@include for-size(tablet) {
+  .container-hero {
+    margin-bottom: 0;
+    max-width: 680px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 200px;
+    padding-bottom: 200px;
+  }
+  .hero-header {
+    font-size: 44px;
+    line-height: 1.4;
+  }
 }

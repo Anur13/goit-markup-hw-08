@@ -8,49 +8,48 @@
     border-radius: 0px 0px 4px 4px;
     text-align: center;
   }
-  &.container {
-    padding-left: 0px;
-    padding-right: 0px;
+
+  // container {
+  //     padding-left: 0px;
+  //     padding-right: 0px;
+  //   }
+
+  .icon-list {
+    padding-bottom: 24px;
   }
 
   @include for-size(mobile-only) {
     .team-card:not(:first-child) {
       margin-top: 20px;
     }
-    .icon-list {
-      padding-bottom: 24px;
-    }
-    img {
-      width: 100%;
-    }
   }
-  @include for-size(tablet-to-desktop) {
+  @include for-size(tablet) {
     img {
-      width: 100%;
+      min-width: 270px;
     }
     &-cards {
       display: flex;
       flex-wrap: wrap;
-      margin-top: -30px;
-      margin-bottom: -30px;
     }
     &-card {
-      margin: 15px;
       flex-basis: calc((100% / 2) - 30px);
     }
   }
-
-  @include for-size(desktop) {
-    &-cards {
-      display: flex;
-      flex-wrap: wrap;
-      flex-basis: calc(100% / 4 - 90px);
-    }
+  @include for-size(tablet-only) {
     &-card {
-      padding-bottom: 30px;
+      margin: 15px;
     }
+    &-cards {
+      margin-top: -30px;
+      margin-bottom: -30px;
+    }
+  }
+  @include for-size(desktop) {
     &-card:not(:first-child) {
       margin-left: 30px;
+    }
+    &-card {
+      flex-basis: calc(100% / 4 - 90px);
     }
   }
 
@@ -58,17 +57,17 @@
     margin-top: 10px;
     margin-bottom: 16px;
   }
-}
-.names-header {
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.17;
-  color: $secondary-text-colour;
-  margin-top: 30px;
-}
+  .names-header {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.17;
+    color: $secondary-text-colour;
+    margin-top: 30px;
+  }
 
-.names-paragraph {
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.17;
+  .names-paragraph {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.17;
+  }
 }

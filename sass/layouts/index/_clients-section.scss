@@ -3,20 +3,21 @@
     padding-top: 94px;
   }
 
-  &-icon__list {
-    display: flex;
-  }
-
-  @include for-size(mobile-only) {
+  @include for-size(mobile) {
     &-section {
       padding-top: 60px;
       padding-bottom: 60px;
     }
     &-icon__list {
+      display: flex;
+
       flex-wrap: wrap;
     }
-    &-item {
-      flex-basis: calc((100% - 30px) / 2);
+  }
+
+  @include for-size(mobile-only) {
+    img {
+      width: 100%;
     }
     &-item:nth-child(even) {
       margin-left: 30px;
@@ -24,18 +25,23 @@
     &-item:nth-child(n + 3) {
       margin-top: 30px;
     }
+    &-item {
+      flex-basis: calc((100% - 30px) / 2);
+    }
   }
 
-  @include for-size(tablet-to-desktop) {
-    &-section {
-      padding-top: 30px;
-      padding-bottom: 30px;
-    }
+  @include for-size(tablet) {
     &-icon__list {
       flex-wrap: wrap;
     }
     &-item {
       flex-basis: calc((100% - 60px) / 3);
+    }
+  }
+
+  @include for-size(tablet-only) {
+    img {
+      max-width: 100%;
     }
     &-item:not(:nth-child(3n + 1)) {
       margin-left: 30px;
@@ -43,9 +49,15 @@
     &-item:nth-child(n + 4) {
       margin-top: 30px;
     }
+    &-section {
+      padding-top: 30px;
+      padding-bottom: 30px;
+    }
   }
-
   @include for-size(desktop) {
+    &-icon__list {
+      flex-wrap: nowrap;
+    }
     &-item {
       flex-basis: calc(100% - 150px / 6);
     }

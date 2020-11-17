@@ -1,6 +1,4 @@
 .social-network__icon-link {
-  height: 44px;
-  width: 44px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -23,4 +21,11 @@
 .social-network__icon-link:hover,
 .social-network__icon-link:focus {
   background-color: $buttons-links-colour;
+}
+
+@include for-size(tablet) {
+  .social-network__icon-link {
+    height: 44px;
+    width: 44px;
+  }
 }

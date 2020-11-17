@@ -1,40 +1,40 @@
-.nav {
-  display: flex;
-  align-items: center;
-
-  &-link {
-    flex-basis: calc(100% - 100px / 3);
-    margin-right: 50px;
-  }
-  &-links {
+.nav-link {
+  flex-basis: calc(100% - 100px / 3);
+  margin-right: 50px;
+}
+@include for-size(tablet) {
+  .nav-links {
     display: flex;
   }
-  .nav-current-link::after {
-    position: absolute;
-    display: block;
-    width: 100%;
-    background: #2196f3;
-    border-radius: 2px;
-    height: 4px;
-    content: "";
-    bottom: 0;
+  .nav {
+    display: flex;
+    align-items: center;
   }
+}
+.nav-current-link {
+  position: relative;
+  padding-bottom: 39px;
+}
+.nav-current-link::after {
+  position: absolute;
+  display: block;
+  width: 100%;
+  background: #2196f3;
+  border-radius: 2px;
+  height: 4px;
+  content: "";
+  bottom: 0;
+}
 
+.nav ul {
+  color: $secondary-text-colour;
+}
+.nav-current {
+  color: $buttons-links-colour;
+}
+@include for-size(tablet-only) {
   .nav-current-link {
-    position: relative;
-    padding-bottom: 39px;
-  }
-
-  & ul {
-    color: $secondary-text-colour;
-  }
-  &-current {
-    color: $buttons-links-colour;
-  }
-  @include for-size(tablet-to-desktop) {
-    .nav-current-link {
-      padding-bottom: 49px;
-    }
+    padding-bottom: 49px;
   }
 }
 .logo span {

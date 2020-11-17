@@ -12,37 +12,36 @@
   <body>
     <header class="portfolio-header header">
       <div class="container container-nav">
-        <a class="logo header-logo" href="/"><span>Web</span>Studio</a>
+        <nav class="nav">
+          <a class="logo header-logo" href="/"><span>Web</span>Studio</a>
 
-        <div data-menu class="nav_contacts is-open">
-          <nav class="nav">
-            <ul class="nav-links">
-              <li class="nav-link"><a href="./index.html">Студия</a></li>
-              <li class="nav-current nav-link"><a class="nav-current-link" href="./portfolio.html">Портфолио</a></li>
-              <li class="nav-link"><a href="">Контакты</a></li>
-            </ul>
-          </nav>
-          <ul class="header-contacts__list">
-            <li class="header-contact__item">
-              <a class="header-contacts header-item" href="info@devstudio.com">
-                <svg class="header__icon" width="16px" height="12px">
-                  <use href="./images/icons-homework4/symbol-defs.svg#envelope"></use>
-                </svg>
-                info@.devstuido.com</a
-              >
-            </li>
-            <li class="header-contact__item">
-              <a class="header-contacts" href="tel:+380991111111">
-                <svg class="header__icon" width="10px" height="16px">
-                  <use href="./images/icons-homework4/symbol-defs.svg#smartphone"></use>
-                </svg>
-                +38 096 111 11 11</a
-              >
-            </li>
+          <ul class="nav-links">
+            <li class="nav-link"><a href="./index.html">Студия</a></li>
+            <li class="nav-link nav-current"><a class="nav-current-link" href="./portfolio.html">Портфолио</a></li>
+            <li class="nav-link"><a href="">Контакты</a></li>
           </ul>
-        </div>
+        </nav>
+
+        <ul class="header-contacts__list">
+          <li class="header-contact__item">
+            <a class="header-contacts header-item" href="info@devstudio.com">
+              <svg class="header__icon" width="16px" height="12px">
+                <use href="./images/icons-homework4/symbol-defs.svg#envelope"></use>
+              </svg>
+              info@.devstuido.com</a
+            >
+          </li>
+          <li class="header-contact__item">
+            <a class="header-contacts" href="tel:+380991111111">
+              <svg class="header__icon" width="10px" height="16px">
+                <use href="./images/icons-homework4/symbol-defs.svg#smartphone"></use>
+              </svg>
+              +38 096 111 11 11</a
+            >
+          </li>
+        </ul>
       </div>
-      <button class="mob_menu-button is-open" type="button" data-menu-button>
+      <button class="mob_menu-button" type="button is-open">
         <svg class="mob_icons" width="40" height="40">
           <use class="mob_icon-menu" href="./images/icons-homework4/symbol-defs.svg#menu-icon"></use>
           <use class="mob_icon-cross" href="./images/icons-homework4/symbol-defs.svg#close-black"></use>
@@ -71,13 +70,12 @@
             <li class="product-card">
               <a class="link-product-card" href="" rel="noopener noreffer" target="_blank">
                 <div class="image-container">
-                  <img
-                    class="product-image"
-                    src="./images/images_homework2/techno-1x.jpg"
-                    srcset="./images/images_homework2/techno-1x.jpg 1x, ./images/images_homework2/techno-2x.jpg 2x"
-                    alt="Картинка веб-сайта"
-                    sizes="(max-width: 379px) 450px, (max-width: 767) 354px, (min-width: 768px) 370px"
-                  />
+                  <picture>
+                    <source srcset="./images/img/examples-1-354@img1x.jpg 1x, ./images/img/examples-1-354img@2x.jpg 2x" media="(min-width: 1200px)" />
+                    <source srcset="./images/img/examples-1-370@img1x.jpg 1x, ./images/img/examples-1-370img@2x.jpg 2x" media="(min-width: 768px)" />
+                    <source srcset="./images/img/examples-1-450@img1x.jpg 1x, ./images/img/examples-1-450img@2x.jpg 2x" media="(max-width: 767px)" />
+                    <img class="product-image" src="./images/img/examples-1-354@img1x.jpg" alt="Логотип ресторана" width="450" />
+                  </picture>
                   <div class="portfolio--product-overlay__container">
                     <p class="portfolio--product-overlay">
                       Технокряк это современная площадка распространения коронавируса. Компании используют эту платформу для цифрового шпионажа и атак
@@ -95,14 +93,12 @@
             <li class="product-card">
               <a class="link-product-card" href="" rel="noopener noreffer" target="_blank">
                 <div class="image-container">
-                  <img
-                    class="product-image"
-                    src="./images/images_homework2/techno-1x.jpg"
-                    srcset="./images/images_homework2/poster-1x.jpg 1x, ./images/images_homework2/poster-2x.jpg 2x"
-                    alt="Постер баскетбольной игры"
-                    sizes="(max-width: 379px) 450px, (max-width: 767) 354px, (min-width: 768px) 370px"
-                  />
-
+                  <picture>
+                    <source srcset="./images/img/examples-2-354@img1x.jpg 1x, ./images/img/examples-2-354img@2x.jpg 2x" media="(min-width: 1200px)" />
+                    <source srcset="./images/img/examples-2-370@img1x.jpg 1x, ./images/img/examples-2-370img@2x.jpg 2x" media="(min-width: 768px)" />
+                    <source srcset="./images/img/examples-2-450@img1x.jpg 1x, ./images/img/examples-2-450img@2x.jpg 2x" media="(max-width: 767px)" />
+                    <img class="product-image" src="./images/img/examples-2-354@img1x.jpg" alt="Логотип ресторана" width="450" />
+                  </picture>
                   <div class="portfolio--product-overlay__container">
                     <p class="portfolio--product-overlay">
                       Технокряк это современная площадка распространения коронавируса. Компании используют эту платформу для цифрового шпионажа и атак
@@ -120,14 +116,12 @@
             <li class="product-card">
               <a class="link-product-card" href="" rel="noopener noreffer" target="_blank">
                 <div class="image-container">
-                  <img
-                    class="product-image"
-                    src="./images/images_homework2/restr-1x.jpg"
-                    srcset="./images/images_homework2/restr-1x.jpg 1x, ./images/images_homework2/restr-2x.jpg 2x"
-                    sizes="(max-width: 379px) 450px, (max-width: 767) 354px, (min-width: 768px) 370px"
-                    alt="Логотип ресторана"
-                  />
-
+                  <picture>
+                    <source srcset="./images/img/examples-3-354@img1x.jpg 1x, ./images/img/examples-3-354img@2x.jpg 2x" media="(min-width: 1200px)" />
+                    <source srcset="./images/img/examples-3-370@img1x.jpg 1x, ./images/img/examples-3-370img@2x.jpg 2x" media="(min-width: 768px)" />
+                    <source srcset="./images/img/examples-3-450@img1x.jpg 1x, ./images/img/examples-3-450img@2x.jpg 2x" media="(max-width: 767px)" />
+                    <img class="product-image" src="./images/img/examples-3-354@img1x.jpg" alt="Логотип ресторана" width="450" />
+                  </picture>
                   <div class="portfolio--product-overlay__container">
                     <p class="portfolio--product-overlay">
                       Технокряк это современная площадка распространения коронавируса. Компании используют эту платформу для цифрового шпионажа и атак
@@ -145,13 +139,12 @@
             <li class="product-card">
               <a class="link-product-card" href="" rel="noopener noreffer" target="_blank">
                 <div class="image-container">
-                  <img
-                    class="product-image"
-                    src="./images/images_homework2/prime-1x.jpg"
-                    srcset="./images/images_homework2/prime-1x.jpg 1x, ./images/images_homework2/prime-2x.jpg 2x"
-                    alt="Фотография наушников"
-                    sizes="(max-width: 379px) 450px, (max-width: 767) 354px, (min-width: 768px) 370px"
-                  />
+                  <picture>
+                    <source srcset="./images/img/examples-4-354@img1x.jpg 1x, ./images/img/examples-4-354img@2x.jpg 2x" media="(min-width: 1200px)" />
+                    <source srcset="./images/img/examples-4-370@img1x.jpg 1x, ./images/img/examples-4-370img@2x.jpg 2x" media="(min-width: 768px)" />
+                    <source srcset="./images/img/examples-4-450@img1x.jpg 1x, ./images/img/examples-4-450img@2x.jpg 2x" media="(max-width: 767px)" />
+                    <img class="product-image" src="./images/img/examples-4-354@img1x.jpg" alt="Логотип ресторана" width="450" />
+                  </picture>
 
                   <div class="portfolio--product-overlay__container">
                     <p class="portfolio--product-overlay">
@@ -170,13 +163,12 @@
             <li class="product-card">
               <a class="link-product-card" href="" rel="noopener noreffer" target="_blank">
                 <div class="image-container">
-                  <img
-                    class="product-image"
-                    src="./images/images_homework2/boxes-1x.jpg"
-                    srcset="./images/images_homework2/boxes-1x.jpg 1x, ./images/images_homework2/boxes-2x.jpg 2x"
-                    alt="Фотографии коробок"
-                    sizes="(max-width: 379px) 450px, (max-width: 767) 354px, (min-width: 768px) 370px"
-                  />
+                  <picture>
+                    <source srcset="./images/img/examples-5-354@img1x.jpg 1x, ./images/img/examples-5-354img@2x.jpg 2x" media="(min-width: 1200px)" />
+                    <source srcset="./images/img/examples-5-370@img1x.jpg 1x, ./images/img/examples-5-370img@2x.jpg 2x" media="(min-width: 768px)" />
+                    <source srcset="./images/img/examples-5-450@img1x.jpg 1x, ./images/img/examples-5-450img@2x.jpg 2x" media="(max-width: 767px)" />
+                    <img class="product-image" src="./images/img/examples-5-354@img1x.jpg" alt="Логотип ресторана" width="450" />
+                  </picture>
 
                   <div class="portfolio--product-overlay__container">
                     <p class="portfolio--product-overlay">
@@ -195,13 +187,12 @@
             <li class="product-card">
               <a class="link-product-card" href="" rel="noopener noreffer" target="_blank">
                 <div class="image-container">
-                  <img
-                    class="product-image"
-                    src="./images/images_homework2/insp-1x.jpg"
-                    srcset="./images/images_homework2/insp-1x.jpg 1x, ./images/images_homework2/insp-2x.jpg 2x"
-                    alt="Скриншот"
-                    sizes="(max-width: 379px) 450px, (max-width: 767) 354px, (min-width: 768px) 370px"
-                  />
+                  <picture>
+                    <source srcset="./images/img/examples-6-354@img1x.jpg 1x, ./images/img/examples-6-354img@2x.jpg 2x" media="(min-width: 1200px)" />
+                    <source srcset="./images/img/examples-6-370@img1x.jpg 1x, ./images/img/examples-6-370img@2x.jpg 2x" media="(min-width: 768px)" />
+                    <source srcset="./images/img/examples-6-450@img1x.jpg 1x, ./images/img/examples-6-450img@2x.jpg 2x" media="(max-width: 767px)" />
+                    <img class="product-image" src="./images/img/examples-6-354@img1x.jpg" alt="Логотип ресторана" width="450" />
+                  </picture>
 
                   <div class="portfolio--product-overlay__container">
                     <p class="portfolio--product-overlay">
@@ -220,13 +211,12 @@
             <li class="product-card">
               <a class="link-product-card" href="" rel="noopener noreffer" target="_blank">
                 <div class="image-container">
-                  <img
-                    class="product-image"
-                    src="./images/images_homework2/limited-1x.jpg"
-                    srcset="./images/images_homework2/limited-1x.jpg 1x, ./images/images_homework2/limited-2x.jpg 2x"
-                    alt="Фотография книги"
-                    sizes="(max-width: 379px) 450px, (max-width: 767) 354px, (min-width: 768px) 370px"
-                  />
+                  <picture>
+                    <source srcset="./images/img/examples-7-354@img1x.jpg 1x, ./images/img/examples-7-354img@2x.jpg 2x" media="(min-width: 1200px)" />
+                    <source srcset="./images/img/examples-7-370@img1x.jpg 1x, ./images/img/examples-7-370img@2x.jpg 2x" media="(min-width: 768px)" />
+                    <source srcset="./images/img/examples-7-450@img1x.jpg 1x, ./images/img/examples-7-450img@2x.jpg 2x" media="(max-width: 767px)" />
+                    <img class="product-image" src="./images/img/examples-7-354@img1x.jpg" alt="Логотип ресторана" width="450" />
+                  </picture>
 
                   <div class="portfolio--product-overlay__container">
                     <p class="portfolio--product-overlay">
@@ -245,13 +235,12 @@
             <li class="product-card">
               <a class="link-product-card" href="" rel="noopener noreffer" target="_blank">
                 <div class="image-container">
-                  <img
-                    class="product-image"
-                    src="./images/images_homework2/lab-1x.jpg"
-                    srcset="./images/images_homework2/lab-1x.jpg 1x, ./images/images_homework2/lab-2x.jpg 2x"
-                    sizes="(max-width: 379px) 450px, (max-width: 767) 354px, (min-width: 768px) 370px"
-                    alt="Фотография ярлыка"
-                  />
+                  <picture>
+                    <source srcset="./images/img/examples-8-354@img1x.jpg 1x, ./images/img/examples-8-354img@2x.jpg 2x" media="(min-width: 1200px)" />
+                    <source srcset="./images/img/examples-8-370@img1x.jpg 1x, ./images/img/examples-8-370img@2x.jpg 2x" media="(min-width: 768px)" />
+                    <source srcset="./images/img/examples-8-450@img1x.jpg 1x, ./images/img/examples-8-450img@2x.jpg 2x" media="(max-width: 767px)" />
+                    <img class="product-image" src="./images/img/examples-8-354@img1x.jpg" alt="Логотип ресторана" width="450" />
+                  </picture>
 
                   <div class="portfolio--product-overlay__container">
                     <p class="portfolio--product-overlay">
@@ -270,13 +259,12 @@
             <li class="product-card">
               <a class="link-product-card" href="" rel="noopener noreffer" target="_blank">
                 <div class="image-container">
-                  <img
-                    class="product-image"
-                    src="./images/images_homework2/busn-1x.jpg"
-                    srcset="./images/images_homework2/busn-1x.jpg 1x, ./images/images_homework2/busn-2x.jpg 2x"
-                    sizes="(max-width: 379px) 450px, (max-width: 767) 354px, (min-width: 768px) 370px"
-                    alt="Фотография ноутбука"
-                  />
+                  <picture>
+                    <source srcset="./images/img/examples-9-354@img1x.jpg 1x, ./images/img/examples-9-354img@2x.jpg 2x" media="(min-width: 1200px)" />
+                    <source srcset="./images/img/examples-9-370@img1x.jpg 1x, ./images/img/examples-9-370img@2x.jpg 2x" media="(min-width: 768px)" />
+                    <source srcset="./images/img/examples-9-450@img1x.jpg 1x, ./images/img/examples-9-450img@2x.jpg 2x" media="(max-width: 767px)" />
+                    <img class="product-image" src="./images/img/examples-9-354@img1x.jpg" alt="Логотип ресторана" width="450" />
+                  </picture>
 
                   <div class="portfolio--product-overlay__container">
                     <p class="portfolio--product-overlay">
