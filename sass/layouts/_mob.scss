@@ -1,32 +1,32 @@
 .mob_menu-button {
-  display: none;
-  padding: 0;
-  margin: 0;
-  background: none;
-  background-color: transparent;
-  border: none;
-  position: absolute;
-  right: 0;
-  top: 0;
-  margin-top: 10px;
-  margin-right: 15px;
-  @include for-size(mobile-only) {
-    display: block;
-  }
+    display: none;
+    padding: 0;
+    margin: 0;
+    background: none;
+    background-color: transparent;
+    border: none;
+    position: absolute;
+    right: 0;
+    top: 0;
+    margin-top: 10px;
+    margin-right: 15px;
+    @include for-size(mobile-only) {
+        display: block;
+    }
 }
 
 @include for-size(mobile-only) {
-  .mob_menu-button:hover .mob_icons,
-  .mob_menu-button:focus .mob_icons {
-    fill: $buttons-links-colour;
-  }
-  .mob_icon-cross {
-    display: none;
-  }
-  .mob_menu-button.is-open .mob_icon-cross {
-    display: block;
-  }
-  .mob_menu-button.is-open .mob_icon-menu {
-    display: none;
-  }
+    .mob_menu-button:hover .mob_icons,
+    .mob_menu-button:focus .mob_icons {
+        fill: $buttons-links-colour;
+    }
+    .mob_icon-cross {
+        display: none;
+    }
+    .mob_menu-button.is-open .mob_icon-cross {
+        display: block;
+    }
+    .mob_menu-button.is-open .mob_icon-menu {
+        display: none;
+    }
 }

@@ -89,7 +89,7 @@ a {
 }
 
 .container {
-  width: 100%px;
+  width: 100%;
   padding-left: 15px;
   padding-right: 15px;
   margin-left: auto;
@@ -167,8 +167,10 @@ a {
   margin-bottom: 20px;
 }
 
-@media (max-width: 479px) {
-  margin-top: 16px;
+@media (max-width: 767px) {
+  .div-logo {
+    margin-top: 16px;
+  }
 }
 
 .nav-link {
@@ -230,13 +232,17 @@ a {
 }
 
 @media (min-width: 768px) {
-  font-size: 36px;
-  line-height: 1, 16;
+  .section-header {
+    font-size: 36px;
+    line-height: 1.16;
+  }
 }
 
 @media (min-width: 1200px) {
-  font-size: 36px;
-  line-height: 1.27;
+  .section-header {
+    font-size: 36px;
+    line-height: 1.27;
+  }
 }
 
 .footer {
@@ -339,7 +345,7 @@ a {
   color: #ffffff;
 }
 
-@media (max-width: 479px) {
+@media (max-width: 767px) {
   .footer .footer-section__whole,
   .footer .section__social-network {
     align-items: baseline;
@@ -360,7 +366,7 @@ a {
   }
 }
 
-@media (max-width: 479px) {
+@media (max-width: 767px) {
   .footer .footer-signup__button {
     margin-left: 0;
     display: inline-flex;
@@ -484,7 +490,6 @@ header a:focus {
 .header__icon {
   fill: currentColor;
   margin-right: 10px;
-  margin-top: px;
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -507,7 +512,7 @@ header a:focus {
   }
 }
 
-@media (max-width: 479px) {
+@media (max-width: 767px) {
   .nav_contacts {
     position: absolute;
     top: 100%;
@@ -519,7 +524,7 @@ header a:focus {
     padding-top: 60px;
     padding-bottom: 60px;
     font-size: 18px;
-    line-height: 1, 16;
+    line-height: 1.16;
     letter-spacing: 0.02em;
   }
   .nav_contacts.is-open {
@@ -657,10 +662,16 @@ header a:focus {
   }
 }
 
-@media (max-width: 479px) {
-  .clients img {
-    width: 100%;
+@media screen and (min-width: 320px) and (max-width: 479px) {
+  .clients-item:not(:first-child) {
+    margin-top: 20px !important;
   }
+  .clients-item {
+    margin-left: 0 !important;
+  }
+}
+
+@media (max-width: 767px) {
   .clients-item:nth-child(even) {
     margin-left: 30px;
   }
@@ -927,7 +938,7 @@ header a:focus {
   padding-bottom: 24px;
 }
 
-@media (max-width: 479px) {
+@media (max-width: 767px) {
   .team .team-card:not(:first-child) {
     margin-top: 20px;
   }
@@ -1016,7 +1027,7 @@ header a:focus {
   margin-bottom: 56px;
 }
 
-@media (max-width: 479px) {
+@media (max-width: 767px) {
   .buttons-list {
     display: flex;
     flex-wrap: wrap;
@@ -1273,13 +1284,13 @@ header a:focus {
   margin-right: 15px;
 }
 
-@media (max-width: 479px) {
+@media (max-width: 767px) {
   .mob_menu-button {
     display: block;
   }
 }
 
-@media (max-width: 479px) {
+@media (max-width: 767px) {
   .mob_menu-button:hover .mob_icons,
   .mob_menu-button:focus .mob_icons {
     fill: #2196f3;

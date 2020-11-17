@@ -1,132 +1,131 @@
 .header-logo {
-  color: #212121;
-  margin-top: 15px;
+    color: #212121;
+    margin-top: 15px;
 }
 .header {
-  padding-bottom: 36px;
-  position: relative;
+    padding-bottom: 36px;
+    position: relative;
 }
 
 header a {
-  transition: color $transition-time $transition-timing-function;
+    transition: color $transition-time $transition-timing-function;
 }
 
 header a:hover,
 header a:focus {
-  color: $buttons-links-colour;
+    color: $buttons-links-colour;
 }
 
 .header-contact__item {
-  margin-right: 30px;
+    margin-right: 30px;
 }
 
 .header-item:not(:last-child) {
-  margin-right: 50px;
+    margin-right: 50px;
 }
 .portfolio-header {
-  margin-bottom: 94px;
-  border-bottom: 1px solid #ececec;
+    margin-bottom: 94px;
+    border-bottom: 1px solid #ececec;
 }
 .header__icon {
-  fill: currentColor;
-  margin-right: 10px;
-  margin-top: px;
-  transition: fill $transition-time $transition-timing-function;
+    fill: currentColor;
+    margin-right: 10px;
+    transition: fill $transition-time $transition-timing-function;
 }
 
 .header-contacts:hover,
 .header-contacts:focus {
-  color: $buttons-links-colour;
-  fill: $buttons-links-colour;
+    color: $buttons-links-colour;
+    fill: $buttons-links-colour;
 }
 .nav_contacts {
-  display: none;
+    display: none;
 }
 
 @include for-size(mobile) {
-  .nav,
-  .header-contacts {
-    font-size: 14px;
-    line-height: 1.14;
-    font-weight: 500;
-  }
+    .nav,
+    .header-contacts {
+        font-size: 14px;
+        line-height: 1.14;
+        font-weight: 500;
+    }
 }
 
 @include for-size(mobile-only) {
-  .nav_contacts {
-    position: absolute;
-    top: 100%;
-    left: 0;
-    width: 100%;
-    height: 393px;
-    text-align: center;
-    background-color: #ffffff;
-    padding-top: 60px;
-    padding-bottom: 60px;
+    .nav_contacts {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        height: 393px;
+        text-align: center;
+        background-color: #ffffff;
+        padding-top: 60px;
+        padding-bottom: 60px;
 
-    font-size: 18px;
-    line-height: 1, 16;
-    letter-spacing: 0.02em;
-  }
-  .nav_contacts.is-open {
-    display: block;
-  }
-  .nav-current-link::after {
-    left: 0;
-  }
-  .nav-link {
-    margin: 0;
-  }
-  .nav-link:not(:first-child) {
-    margin-top: 60px;
-  }
-  .header-contact__item {
-    margin: 0;
-  }
-  .header-contacts__list {
-    margin-top: 60px;
-  }
-  .header-contact__item:not(:first-child) {
-    margin-top: 16px;
-  }
+        font-size: 18px;
+        line-height: 1.16;
+        letter-spacing: 0.02em;
+    }
+    .nav_contacts.is-open {
+        display: block;
+    }
+    .nav-current-link::after {
+        left: 0;
+    }
+    .nav-link {
+        margin: 0;
+    }
+    .nav-link:not(:first-child) {
+        margin-top: 60px;
+    }
+    .header-contact__item {
+        margin: 0;
+    }
+    .header-contacts__list {
+        margin-top: 60px;
+    }
+    .header-contact__item:not(:first-child) {
+        margin-top: 16px;
+    }
 }
 @include for-size(tablet) {
-  .header-contacts__list {
-    display: flex;
-    margin-left: 220px;
-  }
-  .container-nav,
-  .nav_contacts {
-    display: flex;
-    align-items: center;
-    padding-top: 24px;
-    font-size: 18px;
-    line-height: 1.16;
-    font-weight: 500;
-  }
+    .header-contacts__list {
+        display: flex;
+        margin-left: 220px;
+    }
+    .container-nav,
+    .nav_contacts {
+        display: flex;
+        align-items: center;
+        padding-top: 24px;
+        font-size: 18px;
+        line-height: 1.16;
+        font-weight: 500;
+    }
 }
 @include for-size(tablet-only) {
-  .header-contacts {
-    display: flex;
-  }
-  .portfolio-header {
-    margin-bottom: 30px;
-  }
-  .nav_contacts {
-    display: contents;
-  }
-  .header-contacts__list {
-    display: flex;
-    align-items: flex-start;
-    flex-direction: column;
-    margin-left: 0;
-  }
-  .header-contact__item:not(:last-child) {
-    margin-bottom: 10px;
-  }
+    .header-contacts {
+        display: flex;
+    }
+    .portfolio-header {
+        margin-bottom: 30px;
+    }
+    .nav_contacts {
+        display: contents;
+    }
+    .header-contacts__list {
+        display: flex;
+        align-items: flex-start;
+        flex-direction: column;
+        margin-left: 0;
+    }
+    .header-contact__item:not(:last-child) {
+        margin-bottom: 10px;
+    }
 }
 @include for-size(desktop) {
-  .nav_contacts {
-    display: contents;
-  }
+    .nav_contacts {
+        display: contents;
+    }
 }
