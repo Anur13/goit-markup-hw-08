@@ -41,16 +41,19 @@ header a:focus {
 .nav_contacts {
     display: none;
 }
+.index.header {
+    display: flex;
+}
+.portfolio.header {
+    display: flex;
+}
 
-@include for-size(mobile) {
+@include for-size(mobile-only) {
     .nav,
     .header-contacts {
         font-size: 14px;
         line-height: 1.14;
         font-weight: 500;
-    }
-    .index.header {
-        display: flex;
     }
 }
 
@@ -95,7 +98,8 @@ header a:focus {
 @include for-size(tablet) {
     .header-contacts__list {
         display: flex;
-        margin-left: 220px;
+        justify-content: space-between;
+        flex-grow: 1;
     }
     .container-nav,
     .nav_contacts {
@@ -130,5 +134,8 @@ header a:focus {
 @include for-size(desktop) {
     .nav_contacts {
         display: contents;
+    }
+    .first {
+        margin-left: 100px;
     }
 }
